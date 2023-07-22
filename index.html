@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <section>
+        <h1 class="title p-5">Bookmarker</h1>
+
+        <div class="separtor"></div>
+
+        <div class="d-flex justify-content-center align-items-center my-4">
+          <i class="fa-solid fa-bookmark icon"></i>
+          <h3 class="subtitle mx-3">Bookmark your favorite sites</h3>
+          <i class="fa-solid fa-bookmark icon"></i>
+        </div>
+      </section>
+
+      <section>
+        <div class="form mb-4 ">
+          <div class="forminput mb-4">
+            <i class="fa-solid fa-book-bookmark pe-2"></i>
+
+            <label for="siteName"> Site Name</label>
+            <input
+              class="form-control "
+              type="text"
+              placeholder="Bookmark Name"
+              id="siteName"
+            />
+          </div>
+          <div class="forminput-2 mb-4">
+            <i class="fa-solid fa-link pe-2"></i>
+            <label for="siteUrl"> Site Url</label>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Bookmark Url"
+              id="siteUrl"
+            />
+          </div>
+          <div id="submit-btn-container" class="mb-4">
+            <button class="btn btn-danger" onclick="addSite()">submit</button>
+          </div>
+          <div class="separtor"></div>
+        </div>
+      </section>
+
+      <section>
+        <table class="table">
+          <thead>
+            <th>Index</th>
+            <th>Website name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </thead>
+          <tbody id="tableBody">
+                
+          </tbody>
+        </table>
+        
+      </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

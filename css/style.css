@@ -1,0 +1,35 @@
+.title {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+}
+.separtor {
+  border-width: 1px;
+  height: 1px;
+  border-style: dashed;
+  width: 100%;
+}
+.subtitle {
+    background: linear-gradient(to right, red , blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.icon {
+   color: blue;
+   margin-bottom: 3px;
+}
+
+#submit-btn-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+table th { 
+
+    text-align: center;
+}
+
+table tbody td {
+    text-align: center;
+}
